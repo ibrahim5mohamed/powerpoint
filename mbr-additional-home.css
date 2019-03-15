@@ -1,8 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Rubik:300,300i,400,400i,500,500i,700,700i,900,900i);
-
-
-
-
+@font-face{font-family:'flat-jooza';src: url('https://www.fontstatic.com/fonts/flat-jooza/flat-jooza-regular.eot?#iefix');src: local('جذور مسطح'), local('flat-jooza'),url('https://www.fontstatic.com/fonts/flat-jooza/flat-jooza-regular.woff') format('woff');}
 
 body {
   font-style: normal;
@@ -20,35 +16,35 @@ body {
   line-height: 1.6;
 }
 .display-1 {
-  font-family: 'Rubik', sans-serif;
+  font-family: 'flat-jooza', sans-serif;
   font-size: 4.25rem;
 }
 .display-1 > .mbr-iconfont {
   font-size: 6.8rem;
 }
 .display-2 {
-  font-family: 'Rubik', sans-serif;
+  font-family: 'flat-jooza', sans-serif;
   font-size: 3rem;
 }
 .display-2 > .mbr-iconfont {
   font-size: 4.8rem;
 }
 .display-4 {
-  font-family: 'Rubik', sans-serif;
+  font-family: 'flat-jooza', sans-serif;
   font-size: 1rem;
 }
 .display-4 > .mbr-iconfont {
   font-size: 1.6rem;
 }
 .display-5 {
-  font-family: 'Rubik', sans-serif;
+  font-family: 'flat-jooza', sans-serif;
   font-size: 1.5rem;
 }
 .display-5 > .mbr-iconfont {
   font-size: 2.4rem;
 }
 .display-7 {
-  font-family: 'Rubik', sans-serif;
+  font-family: 'flat-jooza', sans-serif;
   font-size: 1rem;
 }
 .display-7 > .mbr-iconfont {
@@ -1394,5 +1390,5 @@ body {
   border-top-color: #149dcc;
 }
 .cid-rkKytGxCCW {
-  background-image: url("../../../assets/images/asphalt-auto-automobile-226460-2000x1333.jpg");
+  background-image: url("https://cdn.ida2at.com/media/2017/01/%D8%B3%D9%85%D8%A7%D8%A1-%D8%A7%D9%84%D9%84%D9%8A%D9%84-%D8%B4%D9%87%D8%A8-750x422.jpg");
 }
