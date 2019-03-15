@@ -425,7 +425,8 @@ nav .mbr-section-btn {
   display: -webkit-flex;
   -webkit-flex-wrap: wrap;
   -webkit-align-items: center;
-  -webkit-justify-content: space-between; }
+  -webkit-justify-content: space-between;
+  height: 0px !important;}
 
 .navbar-collapse {
   -webkit-flex-basis: 100%;
