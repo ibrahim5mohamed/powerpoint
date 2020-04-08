@@ -1,46 +1,4 @@
-function encode(link) {
-         return encodeURIComponent(encodeURI(encodeURI(link)));
-}
- //<![CDATA[
-var allahref=document.getElementsByTagName("a");
-for(var c=0;c<allahref.length;c++)
-{
-if(allahref[c].hostname!="powerpoint.adrkha.com" && allahref[c].hostname!="")
-if(allahref[c].hostname!="www.presentation-ppt.com" && allahref[c].hostname!="")
-if(allahref[c].hostname!="web.facebook.com" && allahref[c].hostname!="")
-if(allahref[c].hostname!="www.facebook.com" && allahref[c].hostname!="")
-if(allahref[c].hostname!="www.paypal.com" && allahref[c].hostname!="")
-if(allahref[c].hostname!="www.youtube.com" && allahref[c].hostname!="")
-if(allahref[c].hostname!="play.google.com" && allahref[c].hostname!="")
-if(allahref[c].hostname!="plus.google.com" && allahref[c].hostname!="")
-if(allahref[c].hostname!="www.linkedin.com" && allahref[c].hostname!="")
-if(allahref[c].hostname!="www.instagram.com" && allahref[c].hostname!="")
-if(allahref[c].hostname!="twitter.com" && allahref[c].hostname!="")
-if(allahref[c].hostname!="1.bp.blogspot.com" && allahref[c].hostname!="")
-if(allahref[c].hostname!="2.bp.blogspot.com" && allahref[c].hostname!="")
-if(allahref[c].hostname!="3.bp.blogspot.com" && allahref[c].hostname!="")
-if(allahref[c].hostname!="4.bp.blogspot.com" && allahref[c].hostname!="")
-if(allahref[c].hostname!="www.blogger.com" && allahref[c].hostname!="")
-if(allahref[c].hostname!="www.instagram.com" && allahref[c].hostname!="")
-if(allahref[c].hostname!="www.fontsquirrel.com" && allahref[c].hostname!="")
-if(allahref[c].hostname!="docs.google.com" && allahref[c].hostname!="")
-if(allahref[c].hostname!="mostaql.com" && allahref[c].hostname!="")
-if(allahref[c].hostname!="www.vecteezy.com" && allahref[c].hostname!="")
-if(allahref[c].hostname!="www.pinterest.com" && allahref[c].hostname!="")
-if(allahref[c].hostname!="www.dmca.com" && allahref[c].hostname!="")
-if(allahref[c].hostname!="www.zamzar.com" && allahref[c].hostname!="")
-if(allahref[c].hostname!="drive.google.com" && allahref[c].hostname!="")
-if(allahref[c].hostname!="go.arabclicks.com" && allahref[c].hostname!="")
-if(allahref[c].hostname!="arabclicks.com" && allahref[c].hostname!="")
-if(allahref[c].hostname!="www.who.int" && allahref[c].hostname!="")
-if(allahref[c].hostname!="t.me" && allahref[c].hostname!="")
-{
-allahref[c].href="https://powerpoint.adrkha.com/p/redirect.html??&&url=_"+encode(allahref[c].href);
-}
-}
- //]]>
-
- var wait_jq = setInterval(function(){	
+var wait_jq = setInterval(function(){	
 	if (typeof($) != 'undefined') {
 		clearInterval(wait_jq);
 		wait_jq = null;
