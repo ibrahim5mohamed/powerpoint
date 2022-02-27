@@ -1,4 +1,4 @@
-/*! AJAX Search Widget for Blogger V2 <https://dte-project.github.io/blogger/search.html> */ ! function(e, t) {
+! function(e, t) {
     function r(e, t) {
         function r(e) {
             return decodeURIComponent(e)
@@ -146,8 +146,8 @@ function(e, t) {
 
     function w(e) {
         if (!j) return e;
-        var t = RegExp(j.replace(/[-[\]{}()*+?.,\\^$|#\s]/g, "\\\\$&"), "i");
-        return e.replace(t, "<mark>$&</mark>")
+        var t = j.replace(/[-[\]{}()*+?.,\\^$|#]/g, "\\\\$&");
+        return t = t.replace(/\s+/g, "\\s+"), t = RegExp(t, "i"), e.replace(t, "<mark>$&</mark>")
     }
 
     function $(t) {
@@ -174,16 +174,16 @@ function(e, t) {
 
     function T(e, t) {
         j = e;
-        var i = X.children[0];
-        d(i, it), d(W, X), b(), p(Y);
-        var a = X.parentNode;
-        u(a, J + "-loading"), y(g(A) + h(s(D.query, {
+        var r = X.children[0];
+        d(r, it), d(W, X), b(), p(Y);
+        var i = X.parentNode;
+        u(i, J + "-loading"), y(g(A) + h(s(D.query, {
             callback: "_" + B,
             "max-results": Q,
-            q: r(e),
+            q: e,
             "start-index": t
         })), function() {
-            f(a, J + "-loading"), n(_[e]) || (_[e] = {});
+            f(i, J + "-loading"), n(_[e]) || (_[e] = {});
             var r = et.innerHTML;
             _[e][t] = [et.children.length, r], q(e, t)
         })
@@ -218,7 +218,7 @@ function(e, t) {
             i: B,
             direction: "rtl",
             url: E.protocol + "//" + E.host,
-            name: "ajax-search",
+            name: "js-search",
             css: 1,
             ad: !0,
             live: !0,
@@ -227,14 +227,14 @@ function(e, t) {
             excerpt: 0,
             image: 0,
             target: 1,
-            chunk: 50,
+            chunk: 10,
             text: {
-                title: "النتائج المقترحة <em>%s%</em>",
-                loading: "جاري البحث&hellip;",
-                previous: "Previous",
-                next: "Next",
+                title: "النتائج المقترحة عن <em>%s%</em>",
+                loading: "جار ي البحث&hellip;",
+                previous: "السابق",
+                next: "التالي",
                 empty: "لا توجد نتائج <em>%s%</em>.",
-                end: "لا توجد نتائج أخرى <em>%s%</em>."
+                end: "وصلت إلى نهاية النتائج <em>%s%</em>."
             },
             query: {
                 alt: "json",
@@ -302,7 +302,7 @@ function(e, t) {
                     if (str = "", t) {
                         if (b) {
                             var r, n, i, o = "media$thumbnail" in e;
-                            b === !0 && (b = 60), a(b) ? (r = n = b + "px", b = "s" + b + "-c") : (i = /^s(\d+)(\-[cp])?$/.exec(b)) ? (r = i[1] + "px", n = i[2] ? i[1] + "px" : "auto") : (i = /^w(\d+)\-h(\d+)(\-[cp])?$/.exec(b)) && (r = i[1] + "px", n = i[2] + "px"), str += '<p class="' + J + "-image " + (o ? "loading" : "no-image") + '">', str += o ? '<img class="lazyload" alt="" src="' + e.media$thumbnail.url.replace(/\/s\d+(\-c)?\//g, "/" + b + "/") + '" style="display:block;width:' + r + ";height:" + n + ';">' : '<span class="img lazyload" style="display:block;width:' + r + ";height:" + n + ';">', str += "</p>"
+                            b === !0 && (b = 80), a(b) ? (r = n = b + "px", b = "s" + b + "-c") : (i = /^s(\d+)(\-[cp])?$/.exec(b)) ? (r = i[1] + "px", n = i[2] ? i[1] + "px" : "auto") : (i = /^w(\d+)\-h(\d+)(\-[cp])?$/.exec(b)) && (r = i[1] + "px", n = i[2] + "px"), str += '<p class="' + J + "-image " + (o ? "loading" : "no-image") + '">', str += o ? '<img alt="" src="' + e.media$thumbnail.url.replace(/\/s\d+(\-c)?\//g, "/" + b + "/") + '" style="display:block;width:' + r + ";height:" + n + ';">' : '<span class="img" style="display:block;width:' + r + ";height:" + n + ';">', str += "</p>"
                         }
                         if (str += '<h4 class="' + J + '-title"><a href="' + t + '"' + ($ ? ' target="' + $ + '"' : "") + ">" + w(e.title.$t) + "</a></h4>", q) {
                             var s = e.summary.$t.replace(/<.*?>/g, "").replace(/[<>]/g, "").trim(),
