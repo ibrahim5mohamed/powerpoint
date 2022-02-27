@@ -302,7 +302,7 @@ function(e, t) {
                     if (str = "", t) {
                         if (b) {
                             var r, n, i, o = "media$thumbnail" in e;
-                            b === !0 && (b = 150), a(b) ? (r = n = b + "px", b = "s" + b + "-rw") : (i = /^s(\d+)(\-[cp])?$/.exec(b)) ? (r = i[1] + "px", n = i[2] ? i[1] + "px" : "auto") : (i = /^w(\d+)\-h(\d+)(\-[cp])?$/.exec(b)) && (r = i[1] + "px", n = i[2] + "px"), str += '<p class="' + J + "-image " + (o ? "loading" : "no-image") + '">', str += o ? '<img alt="" src="' + e.media$thumbnail.url.replace(/\/s\d+(\-c)?\//g, "/" + b + "/") + '" style="display:block;width:' + r + ";height:" + n + ';">' : '<span class="img" style="display:block;width:' + r + ";height:" + n + ';">', str += "</p>"
+                            b === !0 && (b = 80), a(b) ? (r = n = b + "px", b = "s" + b) : (i = /^s(\d+)(\-[cp])?$/.exec(b)) ? (r = i[1] + "px", n = i[2] ? i[1] + "px" : "auto") : (i = /^w(\d+)\-h(\d+)(\-[cp])?$/.exec(b)) && (r = i[1] + "px", n = i[2] + "px"), str += '<p class="' + J + "-image " + (o ? "loading" : "no-image") + '">', str += o ? '<img alt="" src="' + e.media$thumbnail.url.replace(/\/s\d+(\-c)?\//g, "/" + b + "/") + '" style="display:block;width:' + r + ";height:" + n + ';">' : '<span class="img" style="display:block;width:' + r + ";height:" + n + ';">', str += "</p>"
                         }
                         if (str += '<h4 class="' + J + '-title"><a href="' + t + '"' + ($ ? ' target="' + $ + '"' : "") + ">" + w(e.title.$t) + "</a></h4>", q) {
                             var s = e.summary.$t.replace(/<.*?>/g, "").replace(/[<>]/g, "").trim(),
