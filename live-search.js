@@ -223,7 +223,7 @@ function(e, t) {
             ad: !0,
             live: !0,
             source: 'form[action$="/search"]',
-            container: 1,
+            container: 0,
             excerpt: 0,
             image: 0,
             target: 1,
