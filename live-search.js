@@ -225,9 +225,9 @@ function(e, t) {
             source: 'form[action$="/search"]',
             container: 0,
             excerpt: 0,
-            image: 0,
-            target: 0,
-            chunk: 50,
+            image: 1,
+            target: 1,
+            chunk: 10,
             text: {
                 title: "نتائج البحث المقترحة عن <em>%s%</em>",
                 loading: "جاري البحث&hellip;",
