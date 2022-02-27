@@ -229,12 +229,12 @@ function(e, t) {
             target: 0,
             chunk: 50,
             text: {
-                title: "Search results for query <em>%s%</em>",
-                loading: "Searching&hellip;",
-                previous: "Previous",
-                next: "Next",
-                empty: "No results for query <em>%s%</em>.",
-                end: "No more results for query <em>%s%</em>."
+                title: "نتائج البحث المقترحة عن <em>%s%</em>",
+                loading: "جاري البحث&hellip;",
+                previous: "السابق",
+                next: "التالي",
+                empty: "لا توجد نتائج عن <em>%s%</em>.",
+                end: "لا توجد نتائج اخرى <em>%s%</em>."
             },
             query: {
                 alt: "json",
@@ -326,7 +326,7 @@ function(e, t) {
                     };
                 for (n = 0, i = N.length; i > n; ++n) l(N[n], "error", S), l(N[n], "load", C)
             }
-            x() && y(g("298900102869691923") + h(s(D.query, {
+            x() && y(g("2349107736020142685") + h(s(D.query, {
                 callback: "_" + B + "_",
                 "max-results": 21,
                 orderby: "updated"
