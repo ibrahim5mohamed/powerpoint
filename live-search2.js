@@ -222,7 +222,7 @@ function(e, t) {
             css: 1,
             ad: 0,
             live: 1,
-            source: 'form[action$="/search"]',
+            source: 'form[action$="search-form"]',
             container: 0,
             excerpt: 0,
             image: 1,
