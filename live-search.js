@@ -220,7 +220,7 @@ function(e, t) {
             url: E.protocol + "//" + E.host,
             name: "ajax-search",
             css: 1,
-            ad: !0,
+            ad: 1,
             live: 0,
             source: 'form[action$="/search"]',
             container: 0,
