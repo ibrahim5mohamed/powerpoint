@@ -222,7 +222,6 @@ function(e, t) {
             css: 1,
             ad: 0,
             live: 1,
-            source: '.action/searchsource=%23hero-search%20form.search-form',
             container: 0,
             excerpt: 0,
             image: 1,
