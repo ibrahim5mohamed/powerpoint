@@ -221,7 +221,7 @@ function(e, t) {
             name: "ajax-search",
             css: 1,
             ad: !0,
-            live: 1,
+            live: 0,
             source: 'form[action$="/search"]',
             container: 0,
             excerpt: 0,
