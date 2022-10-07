@@ -307,7 +307,7 @@ function(e, t) {
                 return !1
             })() && g(m("402593524723132430") + p(o(B.query, {
                 callback: "_" + j + "_",
-                "max-results": 21,
+                "max-results": 5,
                 orderby: "updated"
             })) + "&q=" + r(M)), y(K, "load", [e, M, E])
         }, e["_" + j + "_"] = function(e) {
